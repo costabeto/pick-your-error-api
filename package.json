@@ -1,0 +1,32 @@
+{
+  "name": "pick-your-error-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/costabeto/pick-your-error-api.git"
+  },
+  "author": "Roberto Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/costabeto/pick-your-error-api/issues"
+  },
+  "homepage": "https://github.com/costabeto/pick-your-error-api#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
