@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+require('dotenv/config');
 
 const app = express();
 
@@ -11,4 +12,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 require('./app/controllers/index')(app);
 
-app.listen(3333, console.log('http://localhost:3333'));
+const port = process.env.PORT || 3333;
+
+app.listen(port, console.log(`Listening on http://localhost:3333`));
