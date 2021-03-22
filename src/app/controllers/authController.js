@@ -1,8 +1,9 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+require('dotenv/config');
 
-const { secret } = require('../../config/auth.json');
+const secret = process.env.SECRET
 
 const User = require('../models/User');
 
